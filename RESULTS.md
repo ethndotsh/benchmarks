@@ -3,14 +3,25 @@
 Each done using a 10 second run with ten samples.
 
 ## Nitro
-191k requests in 10.03s, 38.3 MB read
+Won't run
 
 ## Express
-59k requests in 10.03s, 14.2 MB read
+152k requests in 10.01s, 36.4 MB read
 
 ## Fastify
-106k requests in 10.04s, 18.8 MB read
+531k requests in 10.01s, 94.6 MB read
+
+## tinyhttp
+67k requests in 10.01s, 0 B read
+
+## Polka
+625k requests in 11.01s, 84.9 MB read
+
+## Hapi
+359k requests in 10.01s, 80.1 MB read
+
+## Koa
+571k requests in 11.01s, 101 MB read
 
 
-
-*Tested using autocannon*
+*Tested using autocannon with default settings*

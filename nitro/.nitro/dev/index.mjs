@@ -1,20 +1,21 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import { Server } from 'http';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/node-fetch-native/dist/polyfill.mjs';
+import { Server } from 'http';
 import { tmpdir } from 'os';
 import { join } from 'path';
 import { mkdirSync } from 'fs';
 import { parentPort, threadId } from 'worker_threads';
-import { provider, isWindows } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, createApp, createRouter, lazyEventHandler } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/ohmyfetch/dist/node.mjs';
-import destr from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/destr/dist/index.mjs';
-import { createRouter as createRouter$1 } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/radix3/dist/index.mjs';
-import { createCall, createFetch } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/hookable/dist/index.mjs';
-import { snakeCase } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/scule/dist/index.mjs';
-import { hash } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/ohash/dist/index.mjs';
-import { parseURL } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/ufo/dist/index.mjs';
-import { createStorage } from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/unstorage/dist/index.mjs';
-import _unstorage_drivers_fs from 'file://C:/Users/scout/AppData/Local/npm-cache/_npx/c367e59d342c6fbd/node_modules/unstorage/dist/drivers/fs.mjs';
+import { provider, isWindows } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, createApp, createRouter, lazyEventHandler } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/ohmyfetch/dist/node.mjs';
+import destr from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/destr/dist/index.mjs';
+import { createRouter as createRouter$1 } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/radix3/dist/index.mjs';
+import { createCall, createFetch } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/hookable/dist/index.mjs';
+import { snakeCase } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/scule/dist/index.mjs';
+import { hash } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/ohash/dist/index.mjs';
+import { parseURL } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/ufo/dist/index.mjs';
+import { createStorage } from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/unstorage/dist/index.mjs';
+import _unstorage_drivers_fs from 'file:///Users/ethan/.nvm/versions/node/v17.6.0/lib/node_modules/nitropack/node_modules/unstorage/dist/drivers/fs.mjs';
 
 const _runtimeConfig = {"app":{"baseURL":"/"},"nitro":{"routes":{}}};
 const ENV_PREFIX = "NITRO_";
@@ -73,7 +74,7 @@ function timingMiddleware(_req, res, next) {
   next();
 }
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/scout/Documents/GitHub/benchmarks/nitro/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/ethan/Documents/GitHub/benchmarks/nitro/assets"}];
 
 const assets = createStorage();
 
@@ -87,10 +88,10 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"C:\\Users\\scout\\Documents\\GitHub\\benchmarks\\nitro","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"C:\\Users\\scout\\Documents\\GitHub\\benchmarks\\nitro","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"C:\\Users\\scout\\Documents\\GitHub\\benchmarks\\nitro\\.nitro","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"C:\\Users\\scout\\Documents\\GitHub\\benchmarks\\nitro\\.nitro\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/Users/ethan/Documents/GitHub/benchmarks/nitro","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/Users/ethan/Documents/GitHub/benchmarks/nitro","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/Users/ethan/Documents/GitHub/benchmarks/nitro/.nitro","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/Users/ethan/Documents/GitHub/benchmarks/nitro/.nitro/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 const defaultCacheOptions = {
   name: "_",
@@ -339,10 +340,10 @@ function renderHTMLError(error) {
 `;
 }
 
-const _lazy_342857 = () => Promise.resolve().then(function () { return index$1; });
+const _lazy_251376 = () => Promise.resolve().then(function () { return index$1; });
 
 const handlers = [
-  { route: '/', handler: _lazy_342857, lazy: true, middleware: false, method: undefined }
+  { route: '/', handler: _lazy_251376, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
