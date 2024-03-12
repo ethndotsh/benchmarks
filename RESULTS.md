@@ -1,6 +1,6 @@
 # Results
 
-Each done using a 10 second run with ten samples.
+Each done using a 10 second run with ten samples on a 2021 MacBook Air M1 Base Model 256 GB.
 
 ## Nitro
 Won't run
@@ -13,6 +13,7 @@ Won't run
 
 ## tinyhttp
 67k requests in 10.01s, 0 B read
+Also won't run
 
 ## Polka
 625k requests in 11.01s, 84.9 MB read

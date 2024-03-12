@@ -28,7 +28,7 @@ axios.interceptors.response.use(
 function request() {
   console.log("requesting...");
   try {
-    axios.get("http://localhost:3000/").then((res) => {
+    axios.get("https://benchmarks-cursecodes.koyeb.app/").then((res) => {
       console.log(res.duration);
       request();
     });
